@@ -89,17 +89,7 @@ export default function Contact(){
                    
                 </div>
             </div>
-<div className='md:w-1/3'>
-{
-    
-}
-{
-    !isLoading && Object.keys(data.location).map(key =>{
-        return <itemCard label={key} value={data.location[key]}/>
-    })
-}
 
-</div>
         </>
     );
 }
