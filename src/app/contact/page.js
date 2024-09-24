@@ -78,7 +78,7 @@ export default function Contact(){
                  {/* { !isLoading && JSON.stringify(data) } */}
                 {
 !isLoading && Object.keys(data.location).map(key =>{
-    return <itemCard label={key} value={data.location[key]}/>
+    return <itemCard label={key} value={data.location[key]} key={key}/>
 })
                 }
                 
