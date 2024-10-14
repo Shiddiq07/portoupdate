@@ -9,7 +9,7 @@ export default async function handler(req:NextApiRequest,res:NextApiResponse){
     switch (req.method){
         case "POST":
             try{
-                const  body=JSON.parse(req.body)
+                const body=JSON.parse(req.body)
                 if (typeof body!== "object"){
                     throw new Error('invalid request')
                 }
@@ -24,7 +24,7 @@ export default async function handler(req:NextApiRequest,res:NextApiResponse){
 
             break ;
             case"GET":
-            const allPost=await db.collection("exp").fid({}).toArray();
+            const allPost=await db.collection("exp").find({}).toArray();
             res.json({data:allPost});
             break;
             default:

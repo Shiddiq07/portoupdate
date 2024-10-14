@@ -2,7 +2,7 @@
 import {useState}from 'react';
 import Card from '../../../../components/card';
 
-export default function adminExp(){
+export default function AdminExp(){
     const [data,setData]=useState({
         tittel:'',
         employeType:'',
