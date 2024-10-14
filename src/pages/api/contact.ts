@@ -32,7 +32,7 @@ export default function handler(
   const response:ResponseData={
     location:{ 
       city:"Jakarta", 
-      country:"Indonesian", 
+      country:"Indonesia", 
       street:"Jl. Jalan"
     },
     phone:{
