@@ -4,7 +4,7 @@ import Card from '../../../../components/card';
 
 export default function AdminExp(){
     const [data,setData]=useState({
-        tittel:'',
+        title:'',
         employeType:'',
         companyName:'',
         location:'',
